@@ -1,0 +1,85 @@
+<mxfile host="drawio-plugin" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" modified="2026-07-01T23:26:42.904Z" version="23.1.5" etag="5rM8XFfJVjZuj7Ka8Lcb" type="embed">
+  <diagram id="ipdHEHPKBx7JQ5skhSad" name="C4 Context">
+    <mxGraphModel dx="1244" dy="866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-1" value="C4 Context: Передача ставок в кол-центры" style="text;html=1;strokeColor=none;fillColor=none;align=left;whiteSpace=wrap;fontSize=24;fontStyle=1;fontColor=light-dark(#FFFFFF,#D5D5D5);" parent="1" vertex="1">
+          <mxGeometry x="186.08001708984375" y="1121.719970703125" width="760" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-2" value="Клиент&#xa;[Person]" style="shape=mxgraph.c4.person2;html=1;fillColor=#0B4A7A;strokeColor=#0B4A7A;fontColor=#FFFFFF;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="400.0000170898437" y="1586.719970703125" width="150" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-3" value="Менеджер&#xa;кол-центра банка&#xa;[Person]" style="shape=mxgraph.c4.person2;html=1;fillColor=#0B4A7A;strokeColor=#0B4A7A;fontColor=#FFFFFF;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="816.0800170898438" y="1869.999970703125" width="180" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-4" value="Оператор&#xa;партнёрского&#xa;кол-центра&#xa;[Person]" style="shape=mxgraph.c4.person2;html=1;fillColor=#0B4A7A;strokeColor=#0B4A7A;fontColor=#FFFFFF;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1500.0000170898438" y="1376.719970703125" width="180" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-5" value="Сотрудники&#xa;бэк-офиса&#xa;[Person]" style="shape=mxgraph.c4.person2;html=1;fillColor=#0B4A7A;strokeColor=#0B4A7A;fontColor=#FFFFFF;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1245.0000170898438" y="1189.999970703125" width="180" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-6" value="АБС&#xa;источник ставок&#xa;[Oracle / PL-SQL]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1220.0000170898438" y="1409.219970703125" width="230" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-7" value="Сервис депозитных заявок MVP&#xa;модуль ставок&#xa;[Java Spring Boot]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="776.0800170898438" y="1391.719970703125" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-8" value="Система кол-центра банка&#xa;[Java Spring]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="776.0800170898438" y="1586.719970703125" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-9" value="Файловый канал&#xa;для партнёра&#xa;[SFTP]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#000000;fontStyle=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1156.0800170898438" y="1601.719970703125" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-10" value="Система партнёрского&#xa;кол-центра&#xa;[External System]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#000000;fontStyle=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1480.0000170898438" y="1679.999970703125" width="230" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-11" value="Сайт и интернет-банк&lt;br&gt;[цифровые каналы]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="386.08001708984375" y="1409.219970703125" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-12" value="звонок за&#xa;консультацией" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=light-dark(#F5F5F5,#D2D2D2);labelBackgroundColor=none;" parent="1" source="lNi8xZUl0XmMLFABAMiy-2" target="lNi8xZUl0XmMLFABAMiy-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-13" value="консультирует&#xa;по ставкам" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;" parent="1" source="lNi8xZUl0XmMLFABAMiy-3" target="lNi8xZUl0XmMLFABAMiy-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-14" value="получение ставок&lt;br&gt;для консультаций" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=light-dark(#F5F5F5,#D2D2D2);labelBackgroundColor=none;" parent="1" source="lNi8xZUl0XmMLFABAMiy-8" target="lNi8xZUl0XmMLFABAMiy-7" edge="1">
+          <mxGeometry x="0.004" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-15" value="синхронизация ставок" style="startArrow=block;endArrow=block;html=1;rounded=0;strokeColor=#D79B00;fontColor=default;dashed=1;textShadow=0;labelBackgroundColor=default;" parent="1" source="lNi8xZUl0XmMLFABAMiy-7" target="lNi8xZUl0XmMLFABAMiy-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-16" value="ведение ставок&#xa;и спецусловий" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="lNi8xZUl0XmMLFABAMiy-5" target="lNi8xZUl0XmMLFABAMiy-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-17" value="выгрузка файла&#xa;ставок" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="lNi8xZUl0XmMLFABAMiy-7" target="lNi8xZUl0XmMLFABAMiy-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-18" value="загрузка файла&#xa;ставок" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="lNi8xZUl0XmMLFABAMiy-9" target="lNi8xZUl0XmMLFABAMiy-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-19" value="консультирует&#xa;по ставкам" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="lNi8xZUl0XmMLFABAMiy-4" target="lNi8xZUl0XmMLFABAMiy-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-20" value="звонок при перегрузке&lt;br&gt;кол-центра банка" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="lNi8xZUl0XmMLFABAMiy-2" target="lNi8xZUl0XmMLFABAMiy-10" edge="1">
+          <mxGeometry x="0.6122" y="-27" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="475" y="1740" />
+              <mxPoint x="1501.0800170898438" y="1731.719970703125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lNi8xZUl0XmMLFABAMiy-21" value="ставки для цифровых каналов" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=light-dark(#F5F5F5,#EDEDED);labelBackgroundColor=none;" parent="1" source="lNi8xZUl0XmMLFABAMiy-7" target="lNi8xZUl0XmMLFABAMiy-11" edge="1">
+          <mxGeometry x="-0.0444" y="-9" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
