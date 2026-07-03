@@ -1,0 +1,105 @@
+<mxfile host="drawio-plugin" modified="2026-07-03T17:54:52.455Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="23.1.5" etag="fwD1NQvYJFrJ7i-tfT85" type="embed">
+  <diagram name="C4 Component" id="0">
+    <mxGraphModel dx="3053" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1850" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="C4 Component: Заявка на кредит онлайн" style="text;html=1;strokeColor=none;fillColor=none;align=left;whiteSpace=wrap;fontSize=24;fontStyle=1;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="60" y="40" width="760" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="site" value="Сайт банка&#xa;[PHP + React]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#4F6F95;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="207.5" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ib" value="Интернет-банк&#xa;[ASP.NET MVC / MS SQL]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#4F6F95;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="417.5" width="250" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="score" value="Скоринговая система" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=default;fontStyle=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1450" y="407.5" width="250" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="abs" value="АБС&#xa;[Oracle / PL-SQL]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#4F6F95;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="890" width="250" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="sms" value="SMS-шлюз&#xa;телеком-оператора" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=default;fontStyle=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1510" y="225" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="bound" value="Сервис кредитных заявок [Java Spring Boot]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=default;fontColor=default;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;" parent="1" vertex="1">
+          <mxGeometry x="415" y="160" width="940" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="api" value="API кредитных заявок&#xa;для сайта и интернет-банка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82B366;strokeColor=#4A8A34;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="225" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="life" value="Компонент управления заявкой&#xa;жизненный цикл и статусы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82B366;strokeColor=#4A8A34;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="430" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="offers" value="Компонент условий&#xa;и предложений&#xa;ставки, лимиты, предодобрения" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82B366;strokeColor=#4A8A34;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="397.5" width="250" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="scad" value="Адаптер скоринга&#xa;контроль нагрузки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82B366;strokeColor=default;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="397.5" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="absad" value="Адаптер АБС&#xa;заявки, условия&#xa;и финальные статусы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82B366;strokeColor=#4A8A34;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="790" y="622.5" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="notif" value="Компонент уведомлений&#xa;СМС-коды и статусы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82B366;strokeColor=#4A8A34;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="220" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="store" value="БД кредитных заявок,&#xa;статусов и условий&#xa;[PostgreSQL]" style="shape=cylinder3d;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#82B366;strokeColor=#4A8A34;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="590" width="250" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="mon" value="Логи и мониторинг&#xa;ошибок интеграций" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#82B366;strokeColor=#4A8A34;fontColor=default;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1100" y="637.5" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="подача заявки" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="site" target="api" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="заявка /&#xa;персональные условия" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="ib" target="api" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="создание заявки" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="api" target="life" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="чтение условий" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="api" target="offers" edge="1">
+          <mxGeometry x="-0.0667" y="-25" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c5" value="сохранение заявки&#xa;и статусов" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="life" target="store" edge="1">
+          <mxGeometry x="0.2367" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c6" value="условия и&#xa;предложения" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="offers" target="store" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="проверка заявки" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="life" target="scad" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="решение,&#xa;лимит, ставка" style="startArrow=block;endArrow=block;html=1;rounded=0;strokeColor=#D79B00;fontColor=default;labelBackgroundColor=none;dashed=1;" parent="1" source="scad" target="score" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="передача заявки&#xa;и статусов" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="life" target="absad" edge="1">
+          <mxGeometry x="0.715" y="-34" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c10" value="заявки,&#xa;условия,&#xa;финальные статусы" style="startArrow=block;endArrow=block;html=1;rounded=0;strokeColor=#D79B00;fontColor=default;labelBackgroundColor=none;dashed=1;" parent="1" source="absad" target="abs" edge="1">
+          <mxGeometry x="-0.0684" y="28" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c11" value="СМС-коды&#xa;и уведомления" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="life" target="notif" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="отправка СМС" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="notif" target="sms" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="ошибки и статусы" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="scad" target="mon" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="ошибки и статусы" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="absad" target="mon" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,86 @@
+<mxfile host="drawio-plugin" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" modified="2026-07-01T23:17:42.783Z" version="23.1.5" etag="Su7Xy4_btXSa62pliv4r" type="embed">
+  <diagram name="C4 Component" id="C4 Component">
+    <mxGraphModel dx="1548" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="C4 Component: Передача ставок в кол-центры" style="text;html=1;strokeColor=none;fillColor=none;align=left;whiteSpace=wrap;fontSize=24;fontStyle=1;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="60" y="40" width="760" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b" value="Сервис депозитных заявок MVP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=default;fontColor=default;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;" parent="1" vertex="1">
+          <mxGeometry x="500" y="200" width="680" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="abs" value="АБС&#xa;[Oracle / PL-SQL]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="250" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bank_cc" value="Система кол-центра банка&#xa;[Java Spring]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1250" y="230" width="250" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="partner_sftp" value="SFTP-каталог партнёра" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#000000;fontStyle=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1420" y="465" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="partner_cc" value="Система партнёрского&lt;br&gt;кол-центра&lt;br&gt;[External System]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#000000;fontStyle=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1420" y="610" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sync" value="Компонент синхронизации ставок&#xa;получает ставки из АБС" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="240" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="api" value="API ставок&lt;br&gt;для кол-центра банка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="860" y="240" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="export" value="Экспорт файлов ставок&#xa;CSV/XLSX" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="910" y="455" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="БД ставок,&#xa;версий и статусов выгрузки&#xa;[PostgreSQL]" style="shape=cylinder3d;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="430" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="file" value="Файл ставок&lt;br&gt;версия + дата актуальности" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1210" y="455" width="110" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="monitor" value="Логи и мониторинг&#xa;ошибок выгрузки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#000000;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="600" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="синхронизация ставок" style="startArrow=block;endArrow=block;html=1;rounded=0;strokeColor=#D79B00;fontColor=default;dashed=1;labelBackgroundColor=none;" parent="1" source="sync" target="abs" edge="1">
+          <mxGeometry x="0.0019" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" value="сохранение&#xa;версии ставок" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;" parent="1" source="sync" target="db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="чтение ставок" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;labelBackgroundColor=none;" parent="1" source="api" target="db" edge="1">
+          <mxGeometry x="0.0398" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" value="актуальные ставки&#xa;для консультаций" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;" parent="1" source="bank_cc" target="api" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="чтение ставок" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;" parent="1" source="export" target="db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="формирование" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;" parent="1" source="export" target="file" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="передача файла" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;" parent="1" source="file" target="partner_sftp" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="загрузка файла" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;" parent="1" source="partner_sftp" target="partner_cc" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="статусы и ошибки" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;" parent="1" source="export" target="monitor" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="статусы и ошибки" style="endArrow=block;html=1;rounded=0;strokeColor=default;fontColor=default;" parent="1" target="monitor" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="575" y="630" />
+            </Array>
+            <mxPoint x="574.5714285714284" y="330" as="sourcePoint" />
+            <mxPoint x="590" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
